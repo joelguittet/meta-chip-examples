@@ -1,0 +1,16 @@
+--- a/arch/arm/boot/dts/sun5i.dtsi	2016-08-31 21:46:04.502048009 +0200
++++ b/arch/arm/boot/dts/sun5i.dtsi	2016-09-01 00:44:32.142858602 +0200
+@@ -540,6 +540,13 @@
+ 				allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
+ 			};
+ 
++			spi2_pins_a: spi2@0 {
++				allwinner,pins = "PE0", "PE1", "PE2", "PE3";
++				allwinner,function = "spi2";
++				allwinner,drive = <SUN4I_PINCTRL_10_MA>;
++				allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
++			};
++
+ 			mmc0_pins_a: mmc0@0 {
+ 				allwinner,pins = "PF0", "PF1", "PF2", "PF3",
+ 						 "PF4", "PF5";
