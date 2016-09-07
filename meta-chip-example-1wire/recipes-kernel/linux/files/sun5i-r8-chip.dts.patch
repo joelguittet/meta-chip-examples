@@ -1,0 +1,30 @@
+--- a/arch/arm/boot/dts/sun5i-r8-chip.dts	2016-09-06 02:00:47.000000000 +0200
++++ b/arch/arm/boot/dts/sun5i-r8-chip.dts	2016-09-07 22:48:10.061094116 +0200
+@@ -153,6 +153,13 @@
+ 		gpio = <&pio 2 19 GPIO_ACTIVE_HIGH>; /* PC19 */
+ 		enable-active-high;
+ 	};
++	
++	onewire {
++		compatible = "w1-gpio";
++		gpios = <&pio 3 2 GPIO_ACTIVE_HIGH>; /* PD2 */
++		pinctrl-names = "default";
++		pinctrl-0 = <&chip_w1_pin>;
++	};
+ };
+ 
+ &codec {
+@@ -453,6 +460,13 @@
+ 	        allwinner,drive = <SUN4I_PINCTRL_10_MA>;
+ 	        allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
+ 	};
++	
++	chip_w1_pin: chip_w1_pin@0 {
++		allwinner,pins = "PD2";
++		allwinner,function = "gpio_in";
++		allwinner,drive = <SUN4I_PINCTRL_10_MA>;
++		allwinner,pull = <SUN4I_PINCTRL_PULL_UP>;
++	};
+ };
+ 
+ &uart1 {
