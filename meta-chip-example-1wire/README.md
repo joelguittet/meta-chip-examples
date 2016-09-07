@@ -18,7 +18,7 @@ Images
 --
 
 The following images are available:
-* chip-image-example-1wire: image with 1-Wire master interface set on PD2 pin and all 1-Wire slave support added to the kernel.
+* chip-image-example-1wire: image with 1-Wire master interface set on PD2 pin and all 1-Wire slaves support added to the kernel.
 
 The wanted image is chosen during the build with bitbake command.
 
@@ -40,7 +40,7 @@ Once the C.H.I.P. has been flashed, the 1-Wire interface is available in "/sys/b
 * DQ pin of the 1-wire device to PD2 (LCD-D2) of C.H.I.P.
 There is no need for pull-up on the DQ line (it is set internally). Multiple 1-wire devices can be connected together.
 
-To test the 1-wire interface, connect a DS18B20 sensor to C.H.IP. and read the current temperature typing:
+To test the 1-wire interface, connect a DS18B20 sensor to C.H.I.P. and read the current temperature typing:
 
 	cat /sys/bus/w1/devices/28-*/w1_slave
 
