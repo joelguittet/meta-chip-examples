@@ -30,7 +30,7 @@ Clone sources:
 
 	git clone https://github.com/myfreescalewebpage/meta-chip-examples.git ~/yocto/meta-chip-examples
 
-Add "meta-chip-example/meta-chip-example-spidev" to the bitbake layers configuration file.
+Add "meta-chip-examples/meta-chip-example-spidev" to the bitbake layers configuration file.
 
 See the README file of the meta-chip layer (from my GitHub https://github.com/myfreescalewebpage/meta-chip) to check details about building and flashing images on the C.H.I.P. board.
 
