@@ -12,12 +12,14 @@ This layer depends on the additional layers:
 * meta-openembedded/meta-python
 * meta-openembedded/meta-networking
 * meta-chip (from my GitHub https://github.com/myfreescalewebpage/meta-chip)
+* Additional layers for some specific examples (see the README files of the example layers)
 
 
 Layers
 --
 
 The following layers are available:
+* meta-chip-example-java: JAVA OpenJDK with Hello World application.
 * meta-chip-example-1wire: usage of 1-Wire devices. Demonstrate how to easily patch the kernel with fragments and the device tree with patch files.
 * meta-chip-example-spidev: usage of SPI interface. Second example to demonstrate how to patch the kernel with fragments and the device tree with patch files.
 
