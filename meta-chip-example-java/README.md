@@ -30,7 +30,7 @@ Using
 Clone sources:
 
 	git clone https://github.com/myfreescalewebpage/meta-chip-examples.git ~/yocto/meta-chip-examples
-	git clone --branch fido git://git.yoctoproject.org/meta-java.git ~/yocto/meta-java
+	git clone git://git.yoctoproject.org/meta-java.git ~/yocto/meta-java
 
 Add "meta-chip-examples/meta-chip-example-java" and "meta-java" to the bitbake layers configuration file.
 
