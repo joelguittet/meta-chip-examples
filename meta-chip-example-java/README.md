@@ -19,7 +19,7 @@ Images
 --
 
 The following images are available:
-* chip-image-example-java: image with JAVA and Hello World application to test the installation.
+* chip-image-example-java-helloworld: image with JAVA and Hello World application to test the installation.
 
 The wanted image is chosen during the build with bitbake command.
 
