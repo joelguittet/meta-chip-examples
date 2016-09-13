@@ -16,10 +16,12 @@ SRC_URI = " \
 
 S = "${WORKDIR}"
 
+export JAVA_HOME="${STAGING_DIR_NATIVE}/usr/lib/jvm/icedtea7-native"
+
 do_compile () {
   mkdir -p build
-  javac -sourcepath . -d build `find . -name "*.java"`
-  fastjar -C build -c -m manifest -f helloworld-${PV}.jar .
+  ${JAVA_HOME}/bin/javac -sourcepath . -d build `find . -name "*.java"`
+  ${JAVA_HOME}/bin/jar cfm helloworld-${PV}.jar manifest -C build .
 }
 
 do_install_append () {
