@@ -5,6 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 inherit java-library
 
+DEPENDS_${PN} = "openjdk-7-jre"
 RDEPENDS_${PN} = "openjdk-7-jre"
 
 PR = "r0"
@@ -25,10 +26,10 @@ do_compile () {
 }
 
 do_install_append () {
-  install -d ${D}${ROOT_HOME}
-  install -m 0644 ${WORKDIR}/helloworld-${PV}.jar ${D}${ROOT_HOME}/helloworld.jar
+  install -d ${D}/usr/local/java
+  install -m 0644 ${WORKDIR}/helloworld-${PV}.jar ${D}/usr/local/java/helloworld.jar
 }
 
 FILES_${PN} = " \
-  ${ROOT_HOME}/helloworld.jar \
+  /usr/local/java/helloworld.jar \
 "
