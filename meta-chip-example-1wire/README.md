@@ -34,6 +34,8 @@ Add "meta-chip-examples/meta-chip-example-1wire" to the bitbake layers configura
 
 See the README file of the meta-chip layer (from my GitHub https://github.com/myfreescalewebpage/meta-chip) to check details about building and flashing images on the C.H.I.P. board.
 
+### chip-image-example-1wire
+
 Once the C.H.I.P. has been flashed, the 1-Wire interface is available in "/sys/bus/w1". The wiring is typicaly the following:
 * GND pin of the 1-wire device to GND of C.H.I.P.
 * VCC pin of the 1-wire device to +3.3V of C.H.I.P.

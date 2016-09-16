@@ -34,6 +34,8 @@ Add "meta-chip-examples/meta-chip-example-spidev" to the bitbake layers configur
 
 See the README file of the meta-chip layer (from my GitHub https://github.com/myfreescalewebpage/meta-chip) to check details about building and flashing images on the C.H.I.P. board.
 
+### chip-image-example-spidev
+
 See https://github.com/cpb-/spi-tools to check details and usage of spitools. The SPI interface on the C.H.I.P. board is "/dev/spidev2.0".
 
 
