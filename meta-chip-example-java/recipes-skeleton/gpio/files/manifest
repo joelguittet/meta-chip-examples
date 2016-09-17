@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: dio.gpio.gpio
+Implementation-Version: 0.1
+Class-Path: /usr/share/java/dio.jar

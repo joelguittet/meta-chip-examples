@@ -20,6 +20,7 @@ Images
 
 The following images are available:
 * chip-image-example-java-helloworld: image with JAVA and Hello World application to test the installation.
+* chip-image-example-java-dio: image with JAVA and GPIO application to show how to drive the hardware from JAVA application.
 
 The wanted image is chosen during the build with bitbake command.
 
@@ -36,11 +37,23 @@ Add "meta-chip-examples/meta-chip-example-java" and "meta-java" to the bitbake l
 
 See the README file of the meta-chip layer (from my GitHub https://github.com/myfreescalewebpage/meta-chip) to check details about building and flashing images on the C.H.I.P. board.
 
-After flashing the image on the C.H.I.P. board, the file "helloworld.jar" will be in "/home/root". Execute the following command:
+### chip-image-example-java-helloworld
 
-	java -classpath /home/root -jar /home/root/helloworld.jar
+After flashing the image on the C.H.I.P. board, the file "helloworld.jar" will be in "/usr/local/java". Execute the following command:
+
+	java -jar /usr/local/java/helloworld.jar
 
 The text "Hello World!" in the console indicates that the application is correctly executed.
+
+### chip-image-example-java-dio
+
+After flashing the image on the C.H.I.P. board, the file "gpio.jar" will be in "/usr/local/java". Connect a LED throw a resitor on the pin PE5 (CSI-D1 on C.H.I.P.). Execute the following command:
+
+	java -Djava.security.policy=/home/root/java.policy -jar /usr/local/java/gpio.jar PE5
+
+The LED is blinking several times and the application terminates.
+
+Important note: the policy file is set to permit access to the hardware.
 
 
 Contributing

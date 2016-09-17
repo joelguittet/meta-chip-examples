@@ -1,4 +1,4 @@
-SUMMARY = "JAVA GPIOLEDSample OpenJdk DIO example"
+SUMMARY = "JAVA gpio OpenJdk DIO example"
 SECTION = "examples"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
@@ -11,7 +11,7 @@ RDEPENDS_${PN} = "openjdk-7-jre openjdk-dio"
 PR = "r0"
 
 SRC_URI = " \
-  file://GPIOLEDSample.java \
+  file://gpio.java \
   file://manifest \
 "
 
