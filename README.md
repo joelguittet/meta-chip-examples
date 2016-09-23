@@ -22,6 +22,7 @@ The following layers are available:
 * meta-chip-example-java: JAVA OpenJDK with Hello World and DIO applications to test the installation and show how to drive the hardware.
 * meta-chip-example-1wire: usage of 1-Wire devices. Demonstrate how to easily patch the kernel with fragments and the device tree with patch files.
 * meta-chip-example-spidev: usage of SPI interface. Second example to demonstrate how to patch the kernel with fragments and the device tree with patch files.
+* meta-chip-example-wifi: connection to a WiFi network.
 
 The wanted layer(s) are chosen in the bitbake layers configuration file.
 
