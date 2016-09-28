@@ -24,6 +24,7 @@ The following layers are available:
 * meta-chip-example-spidev: usage of SPI interface. Second example to demonstrate how to patch the kernel with fragments and the device tree with patch files.
 * meta-chip-example-i2c: usage of I2C interfaces with i2c-tools.
 * meta-chip-example-wifi: connection to a WiFi network.
+* meta-chip-example-wifi-hotspot: creation of WiFi hotspot.
 
 The wanted layer(s) are chosen in the bitbake layers configuration file.
 
