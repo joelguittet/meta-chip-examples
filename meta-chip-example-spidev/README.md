@@ -3,7 +3,7 @@ meta-chip-example-spidev
 
 NextThingCo C.H.I.P. Yocto meta layer example SPIDEV.
 
-This layer contains SPIDEV example for the NextThingCo C.H.I.P. board.
+This layer contains SPIDEV example for the NextThingCo C.H.I.P. boards.
 
 This layer depends on the additional layers:
 * meta-yocto

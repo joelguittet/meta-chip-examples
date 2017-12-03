@@ -1,0 +1,30 @@
+--- a/arch/arm/boot/dts/ntc-gr8-crumb.dts	2017-12-03 17:52:09.000000000 +0100
++++ b/arch/arm/boot/dts/ntc-gr8-crumb.dts	2017-12-03 19:51:11.646471298 +0100
+@@ -58,6 +58,7 @@
+ 	aliases {
+ 		i2c0 = &i2c0;
+ 		i2c1 = &i2c1;
++		spi2 = &spi2;
+ 		serial0 = &uart1;
+ 		serial1 = &uart2;
+ 		serial2 = &uart3;
+@@ -136,6 +137,19 @@
+ 	status = "okay";
+ };
+ 
++&spi2 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&spi2_pins_a>, <&spi2_cs0_pins_a>;
++	status = "okay";
++	spi2_0 {
++		#address-cells = <1>;
++		#size-cells = <0>;
++		compatible = "spidev";
++		reg = <0>;
++		spi-max-frequency = <12000000>;
++	};
++};
++
+ &lradc {
+ 	vref-supply = <&reg_ldo2>;
+ 	status = "okay";
