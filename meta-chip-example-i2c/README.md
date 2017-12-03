@@ -3,7 +3,7 @@ meta-chip-example-i2c
 
 NextThingCo C.H.I.P. Yocto meta layer example I2C.
 
-This layer contains I2C example for the NextThingCo C.H.I.P. board.
+This layer contains I2C example for the NextThingCo C.H.I.P. boards.
 
 This layer depends on the additional layers:
 * meta-yocto
@@ -40,11 +40,14 @@ After flashing the image, the i2c-tools can be used to test the I2C interfaces.
 
 Checking the I2C device presence is done with i2cdetect:
 
-	i2cdetect 0 # Will detect device AXP209 available on the baord at address 0x34
+	i2cdetect 0 # Will detect device AXP209 available on the board at address 0x34
 	i2cdetect 1 # Will detect devices connected to C.H.I.P. on this bus, if any
+
+Only on C.H.I.P. board, not available on C.H.I.P. PRO:
+
 	i2cdetect 2 # Will detect device PCF8574 available on the board at address 0x38
 
-AXP209 and PCF8574 will be detected on buses 0 and 2. However, they are busy and it is not possible read/write their registers. The tools "i2cget" and "i2cset" can be used with your own devices.
+AXP209 and PCF8574 are busy and it is not possible read/write their registers. The tools "i2cget" and "i2cset" can be used with your own devices.
 
 
 Contributing
