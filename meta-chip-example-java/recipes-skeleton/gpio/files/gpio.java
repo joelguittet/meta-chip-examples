@@ -59,7 +59,7 @@ public class gpio {
 
 			} catch (Exception e) {
 
-			System.out.println("Received exception while trying to close device");
+				System.out.println("Received exception while trying to close device");
 			}
 		}
 	}
