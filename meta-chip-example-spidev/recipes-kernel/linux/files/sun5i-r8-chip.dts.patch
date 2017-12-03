@@ -1,6 +1,6 @@
---- a/arch/arm/boot/dts/sun5i-r8-chip.dts	2016-08-31 21:45:47.836244092 +0200
-+++ b/arch/arm/boot/dts/sun5i-r8-chip.dts	2016-09-01 00:46:42.831681150 +0200
-@@ -56,6 +56,7 @@
+--- a/arch/arm/boot/dts/sun5i-r8-chip.dts	2017-12-02 17:22:31.000000000 +0100
++++ b/arch/arm/boot/dts/sun5i-r8-chip.dts	2017-12-03 15:26:39.410855878 +0100
+@@ -58,6 +58,7 @@
  		i2c0 = &i2c0;
  		i2c1 = &i2c1;
  		i2c2 = &i2c2;
@@ -8,13 +8,13 @@
  		serial0 = &uart1;
  		serial1 = &uart3;
  	};
-@@ -277,6 +278,19 @@
+@@ -168,6 +169,19 @@
  	};
  };
  
 +&spi2 {
 +	pinctrl-names = "default";
-+	pinctrl-0 = <&spi2_pins_a>;
++	pinctrl-0 = <&spi2_pins_a>, <&spi2_cs0_pins_a>;
 +	status = "okay";
 +	spi2_0 {
 +		#address-cells = <1>;
@@ -25,6 +25,6 @@
 +	};
 +};
 +
- &mmc0_pins_a {
- 	allwinner,pull = <SUN4I_PINCTRL_PULL_UP>;
- };
+ &lradc {
+ 	vref-supply = <&reg_vcc3v0>;
+ 	status = "okay";

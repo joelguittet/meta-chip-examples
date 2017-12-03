@@ -9,7 +9,5 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 # Sources
 SRC_URI_append = " \
     file://spidev.cfg \
-    file://sun5i.dtsi.patch \
     file://sun5i-r8-chip.dts.patch \
-    file://spi-sun4i.c.patch \
 "

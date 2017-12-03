@@ -36,7 +36,15 @@ See the README file of the meta-chip layer (from my GitHub https://github.com/my
 
 ### chip-image-example-spidev
 
-See https://github.com/cpb-/spi-tools to check details and usage of spitools. The SPI interface on the C.H.I.P. board is "/dev/spidev2.0".
+After flashing the image, the interface is available at "/dev/spidev2.0".
+
+The spi-tools can be used to test the SPI interface.
+
+Checking the SPI interface configuration:
+
+	spi-config -d /dev/spidev2.0 -q # Will output current mode, lsb, bits and speed configuration of the interface
+
+See https://github.com/cpb-/spi-tools to check details and usage of spi-tools.
 
 
 Contributing
