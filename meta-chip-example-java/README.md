@@ -3,7 +3,7 @@ meta-chip-example-java
 
 NextThingCo C.H.I.P. Yocto meta layer example JAVA.
 
-This layer contains JAVA example for the NextThingCo C.H.I.P. board.
+This layer contains JAVA example for the NextThingCo C.H.I.P. boards.
 
 This layer depends on the additional layers:
 * meta-yocto
@@ -47,7 +47,7 @@ The text "Hello World!" in the console indicates that the application is correct
 
 ### chip-image-example-java-dio
 
-After flashing the image on the C.H.I.P. board, the file "gpio.jar" will be in "/usr/local/java". Connect a LED throw a resitor on the pin PE5 (CSI-D1 on C.H.I.P.). Execute the following command:
+After flashing the image on the C.H.I.P. board, the file "gpio.jar" will be in "/usr/local/java". Connect a LED throw a resitor on the pin PE5 (CSI-D1 on C.H.I.P., LED D1 on C.H.I.P. PRO Dev Kit). Execute the following command:
 
 	java -Djava.security.policy=/home/root/java.policy -jar /usr/local/java/gpio.jar PE5
 
