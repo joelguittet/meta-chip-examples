@@ -1,0 +1,30 @@
+--- a/arch/arm/boot/dts/ntc-gr8-crumb.dts	2017-11-22 23:05:18.000000000 +0100
++++ b/arch/arm/boot/dts/ntc-gr8-crumb.dts	2017-12-03 16:44:43.963963070 +0100
+@@ -83,6 +83,13 @@
+ 		reset-gpios = <&pio 1 10 GPIO_ACTIVE_LOW>; /* PB10 */
+ 	};
+ 
++	onewire {
++		compatible = "w1-gpio";
++		gpios = <&pio 3 2 GPIO_ACTIVE_HIGH>; /* PD2 */
++		pinctrl-names = "default";
++		pinctrl-0 = <&chip_w1_pin>;
++	};
++	
+ 	/*
+ 	 * Both LDO3 and LDO4 are used in parallel to power up the
+ 	 * WiFi/BT Chip.
+@@ -212,6 +219,13 @@
+ 		allwinner,drive = <SUN4I_PINCTRL_10_MA>;
+ 		allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
+ 	};
++
++	chip_w1_pin: chip_w1_pin@0 {
++		allwinner,pins = "PD2";
++		allwinner,function = "gpio_in";
++		allwinner,drive = <SUN4I_PINCTRL_10_MA>;
++		allwinner,pull = <SUN4I_PINCTRL_PULL_UP>;
++	};
+ };
+ 
+ &pwm {

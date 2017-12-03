@@ -9,4 +9,5 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 # Sources
 SRC_URI_append = " \
     file://1wire.cfg \
+    file://ntc-gr8-crumb.dts.patch \
 "

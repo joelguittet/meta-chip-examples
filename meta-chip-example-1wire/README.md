@@ -3,7 +3,7 @@ meta-chip-example-1wire
 
 NextThingCo C.H.I.P. Yocto meta layer example 1-Wire.
 
-This layer contains 1-Wire example for the NextThingCo C.H.I.P. board.
+This layer contains 1-Wire example for the NextThingCo C.H.I.P. boards.
 
 This layer depends on the additional layers:
 * meta-yocto
@@ -40,7 +40,7 @@ Once the C.H.I.P. has been flashed, the 1-Wire interface is available in "/sys/b
 * GND pin of the 1-wire device to GND of C.H.I.P.
 * VCC pin of the 1-wire device to +3.3V of C.H.I.P.
 * DQ pin of the 1-wire device to PD2 (LCD-D2) of C.H.I.P.
-There is no need for pull-up on the DQ line (it is set internally). Multiple 1-wire devices can be connected together.
+A pull-up resistor (4.7k) must be added between DQ and the VCC pins. Multiple 1-wire devices can be connected together.
 
 To test the 1-wire interface, connect a DS18B20 sensor to C.H.I.P. and read the current temperature typing:
 
