@@ -40,6 +40,7 @@ Once the C.H.I.P. has been flashed, the 1-Wire interface is available in "/sys/b
 * GND pin of the 1-wire device to GND of C.H.I.P.
 * VCC pin of the 1-wire device to +3.3V of C.H.I.P.
 * DQ pin of the 1-wire device to PD2 (LCD-D2) of C.H.I.P.
+
 A pull-up resistor (4.7k) must be added between DQ and the VCC pins. Multiple 1-wire devices can be connected together.
 
 To test the 1-wire interface, connect a DS18B20 sensor to C.H.I.P. and read the current temperature typing:
