@@ -8,6 +8,8 @@ inherit java-library
 DEPENDS_${PN} = "openjdk-7-jre"
 RDEPENDS_${PN} = "openjdk-7-jre"
 
+do_compile[depends] = "openjdk-7-jre:do_populate_sysroot"
+
 PR = "r0"
 
 SRC_URI = " \
