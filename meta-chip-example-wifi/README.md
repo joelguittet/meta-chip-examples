@@ -3,7 +3,7 @@ meta-chip-example-wifi
 
 NextThingCo C.H.I.P. Yocto meta layer example WiFi.
 
-This layer contains WiFi example for the NextThingCo C.H.I.P. board.
+This layer contains WiFi example for the NextThingCo C.H.I.P. boards.
 
 This layer depends on the additional layers:
 * meta-yocto
