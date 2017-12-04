@@ -3,7 +3,7 @@ meta-chip-examples
 
 NextThingCo C.H.I.P. Yocto meta layer examples.
 
-This layer contains examples layers for the NextThingCo C.H.I.P. board.
+This layer contains examples layers for the NextThingCo C.H.I.P. boards.
 
 This layer depends on the additional layers:
 * meta-yocto
