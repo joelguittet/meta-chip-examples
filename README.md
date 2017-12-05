@@ -38,7 +38,7 @@ Clone sources:
 
 See the README files of the example layers for details on the examples.
 
-See also the README file of the meta-chip layer (from my GitHub https://github.com/myfreescalewebpage/meta-chip) to check details about building and flashing images on the C.H.I.P. board.
+See also the README file of the meta-chip layer (from my GitHub https://github.com/myfreescalewebpage/meta-chip) to check details about building and flashing images on the C.H.I.P. boards.
 
 
 Contributing
