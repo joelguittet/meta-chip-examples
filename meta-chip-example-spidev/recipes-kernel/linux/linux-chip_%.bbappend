@@ -8,7 +8,6 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 # Sources
 SRC_URI_append = " \
-    file://spidev.cfg \
     file://sun5i-r8-chip.dts.patch \
     file://ntc-gr8-crumb.dts.patch \
     file://ntc-gr8.dtsi.patch \
