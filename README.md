@@ -19,13 +19,14 @@ Layers
 --
 
 The following layers are available:
-* meta-chip-example-1wire: usage of 1-Wire devices. Demonstrate how to easily patch the kernel with fragments and the device tree with patch files.
 * meta-chip-example-c: Hello World application written in C.
-* meta-chip-example-i2c: usage of I2C interfaces with i2c-tools.
 * meta-chip-example-java: JAVA OpenJDK with Hello World and DIO applications to test the installation and show how to drive the hardware.
+* meta-chip-example-i2c: usage of I2C interfaces with i2c-tools.
+* meta-chip-example-1wire: usage of 1-Wire devices. Demonstrate how to easily patch the kernel with fragments and the device tree with patch files.
 * meta-chip-example-spidev: usage of SPI interface. Demonstrate how to easily patch the device tree with patch files.
 * meta-chip-example-wifi-hotspot: creation of WiFi hotspot.
 * meta-chip-example-wifi: connection to a WiFi network.
+* meta-chip-example-linux-rt: patch of kernel with Linux-RT.
 
 The wanted layer(s) are chosen in the bitbake layers configuration file.
 
