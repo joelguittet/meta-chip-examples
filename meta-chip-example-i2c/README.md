@@ -62,4 +62,3 @@ References
 --
 
 * https://github.com/myfreescalewebpage/meta-chip
-* https://github.com/cpb-/spi-tools
