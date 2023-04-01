@@ -11,7 +11,7 @@ This layer depends on the additional layers:
 * meta-openembedded/meta-oe
 * meta-openembedded/meta-python
 * meta-openembedded/meta-networking
-* meta-chip (from my GitHub https://github.com/myfreescalewebpage/meta-chip)
+* meta-chip (from my GitHub https://github.com/joelguittet/meta-chip)
 * Additional layers for some specific examples (see the README files of the example layers)
 
 
@@ -36,11 +36,11 @@ Using
 
 Clone sources:
 
-	git clone https://github.com/myfreescalewebpage/meta-chip-examples.git ~/yocto/meta-chip-examples
+	git clone https://github.com/joelguittet/meta-chip-examples.git ~/yocto/meta-chip-examples
 
 See the README files of the example layers for details on the examples.
 
-See also the README file of the meta-chip layer (from my GitHub https://github.com/myfreescalewebpage/meta-chip) to check details about building and flashing images on the C.H.I.P. boards.
+See also the README file of the meta-chip layer (from my GitHub https://github.com/joelguittet/meta-chip) to check details about building and flashing images on the C.H.I.P. boards.
 
 
 Contributing
@@ -54,4 +54,4 @@ Use Github Issues to report anomalies or to propose enhancements (labels are ava
 References
 --
 
-* https://github.com/myfreescalewebpage/meta-chip
+* https://github.com/joelguittet/meta-chip
